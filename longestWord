@@ -1,0 +1,12 @@
+function findLongestWord(words) {
+let max = 0;
+for (let word of words) {
+    if (word.length > max) {
+        max = word.length;
+    }
+}
+return max
+}
+console.log(findLongestWord(['hi', 'hello']));
+
+//Runtime = O(n)

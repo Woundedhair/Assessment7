@@ -1,0 +1,32 @@
+Timing Information:
+-------------------
+
+Extra Large Array
+-----------------
+Time to run code with push(): 12.8126 ms
+Time to run code with unshift(): 1.9458338 s
+
+Large Array
+-----------
+Time to run code with push(): 1.3022 ms
+Time to run code with unshift(): 41.7264 ms
+
+Medium Array
+------------
+Time to run code with push(): 204.5 microsecond
+Time to run code with unshift(): 275.3 microsecond
+
+Small Array
+-----------
+Time to run code with push(): 240.4 microsecond
+Time to run code with unshift(): 116.8 microsecond
+
+Tiny Array
+----------
+Time to run code with push(): 139.3 microsecond
+Time to run code with unshift(): 55.5 microsecond
+
+The .push() function appears to be faster when used on the extraLargeArray, largeArray and the mediumArray 
+but the .unshift() method became faster when used on the smallArray and tinyArray. 
+This is because the numbers in the array that needs to be shifted back so the .unshift() method can add a new number to the beginning of the array has 
+greatly reduced in the smallArray and tinyArray compared to the other arrays where the .push() method just needs to add new results to the end of the numbers in the array
